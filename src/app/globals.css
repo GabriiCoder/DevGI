@@ -12,3 +12,44 @@ main {
   height: 100vh;
   height: 100dvh;
 }
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.6;
+  animation: move 10s ease-in-out infinite alternate;
+}
+
+.blob.one {
+  background: rgba(131, 58, 180, 0.8);
+  width: 500px;
+  height: 500px;
+  top: 10%;
+  left: 20%;
+}
+
+.blob.two {
+  background: rgba(252, 176, 69, 0.6);
+  width: 600px;
+  height: 600px;
+  top: 50%;
+  left: 50%;
+}
+
+.blob.three {
+  background: rgba(253, 29, 29, 0.7);
+  width: 400px;
+  height: 400px;
+  top: 30%;
+  right: 10%;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(20px, -20px);
+  }
+}

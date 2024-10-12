@@ -1,6 +1,8 @@
 import Navbar from "../components/Navbar";
 import "./globals.css";
 import { Urbanist } from 'next/font/google';
+import Header from "../components/Header"
+import TransitionPage from "../components/TransitionPage";
 
 const urbanist = Urbanist({
   subsets: ['latin'],
@@ -22,6 +24,7 @@ export default function Layout({children}) {
       <body>
         <main>
           <Navbar />
+          <Header />
           {children}
         </main>
       </body>
