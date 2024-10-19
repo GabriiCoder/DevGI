@@ -2,9 +2,13 @@ import CoverParticles from "@/components/CoverParticles";
 import React from "react";
 import TransitionPage from "@/components/TransitionPage";
 import Avatar from "../components/Avatar";
+import Slogan from "../components/Slogan";
+
 export default function Home() {
   return (
-    <main className="relative">
+    <div className="bg-primary/60 h-full" >
+     <div className="relative w-full h-screen bg-black">
+      <Slogan />
       <div className="flex min-h-[100vh] bg-no-repeat bg-gradient-cover">
         <CoverParticles />
       </div>
@@ -17,11 +21,13 @@ export default function Home() {
           <div className="absolute w-full h-full to-transparent opacity-5"></div>
         </div>
       </div>
-      <div className="absolute bottom-0 right-[20%] z-10">
+
+      <div className="absolute bottom-0 right-[20%] z-10 w-auto">
         <Avatar />
       </div>
 
       <TransitionPage />
-    </main>
+    </div>
+    </div>
   );
 }

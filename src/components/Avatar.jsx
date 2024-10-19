@@ -8,7 +8,7 @@ const Avatar = () => {
       <div className='xl:flex xl:max-w-none'>
         <Image 
           src={'/avatar.png'} 
-          width={700}
+          width={660}
           height={600} 
           alt="Avatar" 
           className='translate-z-0 w-full h-full'

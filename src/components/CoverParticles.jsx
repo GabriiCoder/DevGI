@@ -44,10 +44,10 @@ export default function CoverParticles () {
             },
             particles: {
                 color: {
-                    value: "#ffffff",
+                    value:["#7DF9FF", "#32CD32", "#9370DB", "#00CED1"],
                 },
                 links: {
-                    color: "#ffffff",
+                    color: ["#7DF9FF", "#32CD32", "#9370DB", "#00CED1"],
                     distance: 150,
                     enable: true,
                     opacity: 1,
@@ -66,7 +66,7 @@ export default function CoverParticles () {
                 number: {
                     density: {
                         enable: true,
-                        area: 800,
+                        area: 900,
                     },
                     value: 90,
                 },
